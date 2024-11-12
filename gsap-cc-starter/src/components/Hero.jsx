@@ -4,7 +4,7 @@ import { Link } from "react-scroll";
 
 const Hero = () => {
   useEffect(() => {
-    // Animate h1
+
     gsap.fromTo(
       "h1",
       { opacity: 0, y: -50 },
@@ -16,7 +16,7 @@ const Hero = () => {
       }
     );
 
-    // Animate paragraph
+
     gsap.fromTo(
       "p",
       { opacity: 0, y: 50 },
@@ -29,7 +29,7 @@ const Hero = () => {
       }
     );
 
-    // Animate button with additional delay
+ 
     gsap.fromTo(
       ".view-gallery-button",
       { opacity: 0, y: 20 },
@@ -38,7 +38,7 @@ const Hero = () => {
         y: 0,
         duration: 1,
         ease: "sine.inOut",
-        delay: 2, // Delay after the paragraph animation
+        delay: 2, 
       }
     );
   }, []);
@@ -61,14 +61,13 @@ const Hero = () => {
         <h1 className="text-5xl font-bold text-white">Dip Pools LTD</h1>
         <p className="mt-4 text-lg text-gray-300">Explore more</p>
         
-        {/* Button that appears after text */}
-        <Link
+                <Link
           to="gallery"
           smooth={true}
           duration={800}
           className="view-gallery-button mt-6 inline-block px-6 py-3 bg-blue-500 text-white rounded-full text-lg hover:bg-blue-600 cursor-pointer"
         >
-          View Gallery
+          Gallery
         </Link>
       </div>
       <div className="absolute inset-0 bg-black opacity-30"></div>
