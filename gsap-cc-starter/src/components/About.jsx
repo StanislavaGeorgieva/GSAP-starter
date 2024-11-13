@@ -102,7 +102,7 @@ const About = () => {
       />
       
       {/* Bento Grid Section */}
-      <section className="bento-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(250px, 1fr))", gap: "20px", padding: "20px", marginTop: "100px" }}>
+      <section className="w-screen overflow-hidden h-full common-padding bg-zinc ">
         <h2 className="text-content" style={{ color: "#fff", textAlign: "center", gridColumn: "span 3" }}>
           About Us
         </h2>

@@ -25,32 +25,34 @@ export const imageUrls = [
     {
       id: 1,
       textLists: [
-        "Enter A17 Pro.",
-        "Game‑changing chip.",
-        "Groundbreaking performance.",
+"Built to last, designed to impress.",
+        "Expert construction for pools that endure.",
+        "Comprehensive maintenance, effortless enjoyment."
       ],
       video: highlightFirstVideo,
       videoDuration: 4,
     },
     {
       id: 2,
-      textLists: ["Titanium.", "So strong. So light. So Pro."],
+      textLists: [  ],
       video: highlightSecondVideo,
       videoDuration: 5,
     },
     {
       id: 3,
       textLists: [
-        "iPhone 16 Pro Max has the",
-        "longest optical zoom in",
-        "iPhone ever. Far out.",
+        "Experience the ultimate in relaxation.",
+        "Premium pool and spa designs for luxury living.",
+        "Crafting your oasis, one detail at a time."
       ],
       video: highlightThirdVideo,
       videoDuration: 2,
     },
     {
       id: 4,
-      textLists: ["All-new Action button.", "What will yours do?."],
+      textLists: [  "Leave your dreams in our hands.",
+        "Crafting pools that bring visions to life.",
+        "From design to maintenance, we've got you covered."],
       video: highlightFourthVideo,
       videoDuration: 3.63,
     },
