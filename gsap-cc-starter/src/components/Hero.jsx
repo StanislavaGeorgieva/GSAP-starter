@@ -7,7 +7,7 @@ const Hero = () => {
 
     gsap.fromTo(
       "h1",
-      { opacity: 0, y: -50 },
+      { opacity: 0, y: -100 },
       {
         opacity: 1,
         y: 0,
@@ -16,10 +16,11 @@ const Hero = () => {
       }
     );
 
+    
 
     gsap.fromTo(
       "p",
-      { opacity: 0, y: 50 },
+      { opacity: 0, y: 100 },
       {
         opacity: 1,
         y: 0,
@@ -32,13 +33,15 @@ const Hero = () => {
  
     gsap.fromTo(
       ".view-gallery-button",
-      { opacity: 0, y: 20 },
+      { opacity: 0, y: 50, rotation: 0 }, // Starting state
       {
         opacity: 1,
         y: 0,
-        duration: 1,
-        ease: "sine.inOut",
-        delay: 2, 
+        rotation: "+=360", // Rotate 360 degrees
+        duration: 2, // Duration for one cycle
+        repeat: -1, // Repeat infinitely
+        repeatDelay: 2, // Delay between repeats
+        ease: "bounce.out", // Ease for smooth animation
       }
     );
   }, []);
@@ -69,6 +72,8 @@ const Hero = () => {
         >
           Gallery
         </Link>
+
+        
       </div>
       <div className="absolute inset-0 bg-black opacity-30"></div>
     </section>
